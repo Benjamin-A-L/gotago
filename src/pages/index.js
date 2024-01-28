@@ -3,7 +3,7 @@ import '@fontsource/rubik'
 import './styles.css'
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import styled from "styled-components"
-import { NavBar, NavBarMobile } from "./navbar";
+import { NavBar, NavBarMobile } from "../components/navbar";
 import { StaticImage } from "gatsby-plugin-image";
 import { Helmet } from "react-helmet";
 

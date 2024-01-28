@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo } from './index.js';
+import { Logo } from '../pages/index.js';
 import styled from "styled-components"
 import { Link } from 'gatsby';
 import scrollTo from "gatsby-plugin-smoothscroll"
