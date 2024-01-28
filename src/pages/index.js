@@ -85,7 +85,7 @@ const IndexPage = () => {
           </div>
 
       </section>
-
+ 
       <footer className="home-footer">
         <a className='footer-email sm-icon' type="email" target='_blank' href="mailto:benjamin.astudilloloyer@holdtml.com">benjamin.astudilloloyer@holdtml.com</a>
         <div className="social-media-container">
