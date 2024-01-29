@@ -31,7 +31,7 @@ const IndexPage = () => {
       <section className="header-section">
         <div className='header-container'>
 
-          <h1>the access to the digital era for your business</h1>
+          <h1>The access to the digital era for your business</h1>
           <div className="header-cta-container">
             <p>sign up for a free call to chat with us</p>
             <button className='header-cta-btn' onClick={()=>scrollTo('.booking-section')}>take me there</button>
@@ -47,19 +47,19 @@ const IndexPage = () => {
       <section className="help-section">
         <div className="how-container">
         
-          <h1>How we can benefit your company</h1>
-            <p className='how-paragraph-1'>We make websites to help your potential customers find out about your business, and become recurrent.</p>
-            <p className='how-paragraph-2'>our area of expertiese is making fast and atractive websites, that you can easily edit without needing to learn code</p>
+          <h2>How we can benefit your company</h2>
+          <p className='how-paragraph-1 how-paragraph'>We make websites to help your potential customers find out about your business, and become recurrent.</p>
+          <p className='how-paragraph-2 how-paragraph'>our area of expertiese is making fast and atractive websites, that you can easily edit without needing to learn code</p>
           
           <div className="how-we-do-it-explanation">
-            <div className="gatsby-container">
+            <div className="gatsby-container how-item-container">
               <p><a href='https://gatsbyjs.com' target='_blank'>gatsby</a> is a static site generator, that we use to build your website, this means that all of its static content is served almost instantaniusly</p>
               <a href='https://gatsbyjs.com' target='_blank'>
                 <StaticImage className='icon' src='../images/icon.png'></StaticImage>
               </a>
             </div>
         
-            <div className='prismic-container'>
+            <div className='prismic-container how-item-container'>
               <a href='https://prismic.io' target='_blank'>
                 <StaticImage className='icon' src='../images/prismic-logo.png'></StaticImage>
               </a>
