@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons"
+import myImage from '../images/holdtml-banner.jpg'
 
 
 export const LogoStyled = styled.div`
@@ -49,11 +50,11 @@ const IndexPage = () => {
         
           <h2>How we can benefit your company</h2>
           <p className='how-paragraph-1 how-paragraph'>We make websites to help your potential customers find out about your business, and become recurrent.</p>
-          <p className='how-paragraph-2 how-paragraph'>our area of expertiese is making fast and atractive websites, that you can easily edit without needing to learn code</p>
+          <p className='how-paragraph-2 how-paragraph'>our area of expertise is making fast and atractive websites, that you can easily edit without needing to learn code</p>
           
           <div className="how-we-do-it-explanation">
             <div className="gatsby-container how-item-container">
-              <p><a href='https://gatsbyjs.com' target='_blank'>gatsby</a> is a static site generator, that we use to build your website, this means that all of its static content is served almost instantaniusly</p>
+              <p><a href='https://gatsbyjs.com' target='_blank'>gatsby</a> is a static site generator, that we use to build your website, this means that all of its static content is served almost nstantaneously</p>
               <a href='https://gatsbyjs.com' target='_blank'>
                 <StaticImage className='icon' src='../images/icon.png'></StaticImage>
               </a>
@@ -63,7 +64,7 @@ const IndexPage = () => {
               <a href='https://prismic.io' target='_blank'>
                 <StaticImage className='icon' src='../images/prismic-logo.png'></StaticImage>
               </a>
-              <p>we integrate <a href='https://prismic.io' target='_blank'>prismic</a> into your website, so that its content can be easily be edited without you needing to hire any aditional web developers, or learning how to code</p>
+              <p>we integrate <a href='https://prismic.io' target='_blank'>prismic</a> into your website, so that its content can be easily be edited without you needing to hire any additional web developers, or learning how to code</p>
             </div>
         
           </div>
@@ -100,4 +101,14 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => {
+  return (
+    <>
+      <title>HoldTML - High-End Web Development for Bars and Restaurants</title>
+      <meta name='description' content='We are a web development agency that makes extremely fast websites with Gatsby for bar and restaurant owners looking to make a positive change on their online precence.' />
+      <meta property='og:image' content={myImage} />
+      <meta property='og:title' content='HoldTML' />
+      <meta property='og:description' content='High-End Web Development for Bars and Restaurants' />
+    </>
+  );
+};
